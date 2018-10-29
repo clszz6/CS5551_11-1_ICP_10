@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> ICP 8 </ion-title>
+  </ion-navbar>
+</ion-header>
+  
+  <ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="text" placeholder="Enter a venue type"></ion-input>
+      </ion-item>
+      <button ion-button full (click)="getVenue()">Food near you</button>
+      <ion-textarea [(ngModel)]="name" ></ion-textarea>
+      <ion-textarea [(ngModel)]="address" ></ion-textarea>
+    </ion-list>
+  </ion-content>
